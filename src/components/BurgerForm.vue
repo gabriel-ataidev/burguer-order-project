@@ -81,8 +81,30 @@ export default {
             this.meats = data.carnes;
             this.optionalsData = data.opcionais;
       },
+      async createBurger(e) {
+          e.preventDefault();
+          const data = {
+              name: this.name,
+              meat: this.meat,
+              bread: this.bread,
+              optionals: Array.from(this.optionals),
+              status: "Solicitado"
+          }
+          const dataJson = JSON.stringify(data);
 
-          console.log(data);
+          const req = await fetch("http://localhost:3000/burgers", {
+              method: "POST",
+              headers: {"content-type": "application/json"},
+              body: dataJson
+          });
+          const res = await req.json();
+
+
+        //clear inputs
+          this.carne = '';
+          this.bread = '';
+          this.name = '';
+          this.optionals = [];
       }
   },
   mounted() {
