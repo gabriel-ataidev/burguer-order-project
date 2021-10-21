@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer">
+  <footer>
     <img src="/img/instagram-icon.png" />
     <p>MAKE YOUR BURGUER &copy; 2021</p>
     <img src="/img/whatsapp-icon.png" />
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="less">
-#footer{
+footer{
   display: flex;
   align-items: center;
   justify-content: center;
