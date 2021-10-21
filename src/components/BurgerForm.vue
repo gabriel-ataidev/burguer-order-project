@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>message component</p>
+    <Modal :msg="msg" v-show="msg"/>
     <div class="form-container">
       <form id="burger-form" @submit="createBurger">
         <div class="input-container">
@@ -58,8 +58,13 @@
 </template>
 
 <script>
+import Modal from './Modal.vue';
+
 export default {
   name: "BurgerForm",
+  components: {
+      Modal,
+  },
   data() {
       return {
           name: null,
@@ -69,7 +74,7 @@ export default {
           breads: null,
           meats: null,
           optionals: [],
-          msg: null
+          msg: null,
       }
   },
   methods: {
@@ -99,6 +104,11 @@ export default {
           });
           const res = await req.json();
 
+        //send msg
+        this.msg = `Pedido nº${res.id} realizado com sucesso`;
+
+        //clear msg
+        setTimeout(() => this.msg = "", 2000);
 
         //clear inputs
           this.carne = '';
