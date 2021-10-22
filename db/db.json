@@ -90,19 +90,20 @@
       "id": 1
     },
     {
-      "name": null,
-      "meat": "Picanha",
-      "bread": "3 Queijos",
+      "name": "jonas",
+      "meat": "Alcatra",
+      "bread": "Parmesão e Orégano",
       "optionals": [
-        "Cheddar",
-        "Tomate"
+        "Bacon",
+        "Tomate",
+        "Pepino"
       ],
       "status": "Solicitado",
       "id": 2
     },
     {
-      "name": "cxz",
-      "meat": "Veggie burger",
+      "name": "david",
+      "meat": "Picanha",
       "bread": "Parmesão e Orégano",
       "optionals": [
         "Cheddar",
@@ -110,79 +111,6 @@
       ],
       "status": "Solicitado",
       "id": 3
-    },
-    {
-      "name": "joao",
-      "meat": "Alcatra",
-      "bread": "Integral",
-      "optionals": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "name": "aaa",
-      "meat": "Picanha",
-      "bread": "3 Queijos",
-      "optionals": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "name": "",
-      "meat": "Picanha",
-      "bread": "",
-      "optionals": [],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "name": null,
-      "meat": null,
-      "bread": null,
-      "optionals": [],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "name": null,
-      "meat": null,
-      "bread": null,
-      "optionals": [],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
-      "name": "",
-      "meat": null,
-      "bread": "",
-      "optionals": [],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
-      "name": null,
-      "meat": null,
-      "bread": null,
-      "optionals": [],
-      "status": "Solicitado",
-      "id": 10
-    },
-    {
-      "name": "gchsdjn",
-      "meat": "Picanha",
-      "bread": "Parmesão e Orégano",
-      "optionals": [
-        "Bacon",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 11
     }
   ]
 }
