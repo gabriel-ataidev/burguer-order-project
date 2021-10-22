@@ -1,5 +1,6 @@
 <template>
   <div class="burger-table">
+    <Modal :msg="msg" v-show="msg" />
     <div id="burger-table-heading">
       <div class="order-id">#</div>
       <div>Cliente:</div>
@@ -10,20 +11,35 @@
     </div>
     <div id="burger-table-rows">
       <div class="burger-table-row" v-for="burger in burgers" :key="burger.id">
-        <div class="order-number"> {{burger.id}} </div>
-        <div> {{burger.name}} </div>
-        <div> {{burger.bread}} </div>
-        <div> {{burger.meat}} </div>
+        <div class="order-number">{{ burger.id }}</div>
+        <div>{{ burger.name }}</div>
+        <div>{{ burger.bread }}</div>
+        <div>{{ burger.meat }}</div>
         <div>
           <ul>
-            <li v-for="(optional, index) in burger.optionals" :key="index"> {{optional}} </li>
+            <li v-for="(optional, index) in burger.optionals" :key="index">
+              {{ optional }}
+            </li>
           </ul>
         </div>
         <div>
-          <select name="status" class="status" @change="updateBurger($event, burger.id)">
-            <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="burger.status == s.tipo"> {{s.tipo}} </option>
+          <select
+            name="status"
+            class="status"
+            @change="updateBurger($event, burger.id)"
+          >
+            <option
+              v-for="s in status"
+              :key="s.id"
+              :value="s.tipo"
+              :selected="burger.status == s.tipo"
+            >
+              {{ s.tipo }}
+            </option>
           </select>
-          <button class="delete-btn" @click="deleteBurger(burger.id)">Cancelar</button>
+          <button class="delete-btn" @click="deleteBurger(burger.id)">
+            Cancelar
+          </button>
         </div>
       </div>
     </div>
@@ -31,13 +47,19 @@
 </template>
 
 <script>
+import Modal from "./Modal.vue";
+
 export default {
   name: "Dashboard",
+  components: {
+    Modal,
+  },
   data() {
     return {
       burgers: null,
       burger_id: null,
       status: [],
+      msg: null,
     };
   },
   methods: {
@@ -56,23 +78,33 @@ export default {
     },
     async deleteBurger(id) {
       const req = await fetch(`http://localhost:3000/burgers/${id}`, {
-        method: "DELETE"
+        method: "DELETE",
       });
       const res = await req.json();
       this.getOrders();
+
+      //send msg
+      this.msg = `Pedido nº${id} removido com sucesso`;
+
+      //clear msg
+      setTimeout(() => (this.msg = ""), 2000);
     },
     async updateBurger(event, id) {
       const option = event.target.value;
-      const dataJson = JSON.stringify({ status: option});
+      const dataJson = JSON.stringify({ status: option });
       const req = await fetch(`http://localhost:3000/burgers/${id}`, {
         method: "PATCH",
-        headers: {"Content-Type": "application/json"},
-        body: dataJson
+        headers: { "Content-Type": "application/json" },
+        body: dataJson,
       });
       const res = await req.json();
-      console.log(res);
+      
+      //send msg
+        this.msg = `Pedido nº${res.id} foi atualizado para ${res.status}`;
 
-    }
+        //clear msg
+        setTimeout(() => this.msg = "", 2000);
+    },
   },
   mounted() {
     this.getOrders();

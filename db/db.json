@@ -90,26 +90,6 @@
       "id": 3
     },
     {
-      "name": "eee",
-      "meat": "Alcatra",
-      "bread": "3 Queijos",
-      "optionals": [
-        "Bacon"
-      ],
-      "status": "Em produção",
-      "id": 4
-    },
-    {
-      "name": "eec",
-      "meat": "Picanha",
-      "bread": "3 Queijos",
-      "optionals": [
-        "Cebola roxa"
-      ],
-      "status": "s.tipo",
-      "id": 5
-    },
-    {
       "name": "iara",
       "meat": "Picanha",
       "bread": "3 Queijos",
@@ -121,7 +101,7 @@
         "Salame",
         "Bacon"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 6
     },
     {
@@ -131,7 +111,7 @@
       "optionals": [
         "Tomate"
       ],
-      "status": "Finalizado",
+      "status": "Em produção",
       "id": 7
     }
   ]
