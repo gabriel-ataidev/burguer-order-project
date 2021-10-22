@@ -86,7 +86,7 @@
         "Cheddar",
         "Cebola roxa"
       ],
-      "status": "Solicitado",
+      "status": "s.tipo",
       "id": 3
     },
     {
@@ -96,7 +96,7 @@
       "optionals": [
         "Bacon"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 4
     },
     {
@@ -106,8 +106,33 @@
       "optionals": [
         "Cebola roxa"
       ],
-      "status": "Solicitado",
+      "status": "s.tipo",
       "id": 5
+    },
+    {
+      "name": "iara",
+      "meat": "Picanha",
+      "bread": "3 Queijos",
+      "optionals": [
+        "Cheddar",
+        "Tomate",
+        "Pepino",
+        "Cebola roxa",
+        "Salame",
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "name": "jual",
+      "meat": "Picanha",
+      "bread": "Italiano Branco",
+      "optionals": [
+        "Tomate"
+      ],
+      "status": "Finalizado",
+      "id": 7
     }
   ]
 }
