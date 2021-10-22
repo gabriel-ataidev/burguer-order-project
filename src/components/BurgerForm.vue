@@ -32,7 +32,7 @@
         </div>
         <div class="input-container optional-container">
           <label id="optional-title" for="optional"
-            >Selecione a carne do seu burger</label
+            >Selecione os opcionais</label
           >
           <div
             class="checkbox-container"

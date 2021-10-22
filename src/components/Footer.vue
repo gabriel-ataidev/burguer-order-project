@@ -1,7 +1,7 @@
 <template>
   <footer>
     <img src="/img/instagram-icon.png" />
-    <p>MAKE YOUR BURGUER &copy; 2021</p>
+    <p>MAKE YOUR BURGER &copy; 2021</p>
     <img src="/img/whatsapp-icon.png" />
   </footer>
 </template>
