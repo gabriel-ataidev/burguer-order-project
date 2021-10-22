@@ -79,29 +79,6 @@
   ],
   "burgers": [
     {
-      "name": "tgvw4e",
-      "meat": "Picanha",
-      "bread": "3 Queijos",
-      "optionals": [
-        "Bacon",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
-      "name": "jonas",
-      "meat": "Alcatra",
-      "bread": "Parmesão e Orégano",
-      "optionals": [
-        "Bacon",
-        "Tomate",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
       "name": "david",
       "meat": "Picanha",
       "bread": "Parmesão e Orégano",
@@ -111,6 +88,26 @@
       ],
       "status": "Solicitado",
       "id": 3
+    },
+    {
+      "name": "eee",
+      "meat": "Alcatra",
+      "bread": "3 Queijos",
+      "optionals": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 4
+    },
+    {
+      "name": "eec",
+      "meat": "Picanha",
+      "bread": "3 Queijos",
+      "optionals": [
+        "Cebola roxa"
+      ],
+      "status": "Solicitado",
+      "id": 5
     }
   ]
 }
