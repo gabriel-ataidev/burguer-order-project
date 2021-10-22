@@ -17,7 +17,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 10vh;
   background: #222;
   border-top: 4px solid #111;
   color: #fcba03;
