@@ -77,42 +77,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "name": "david",
-      "meat": "Picanha",
-      "bread": "Parmesão e Orégano",
-      "optionals": [
-        "Cheddar",
-        "Cebola roxa"
-      ],
-      "status": "s.tipo",
-      "id": 3
-    },
-    {
-      "name": "iara",
-      "meat": "Picanha",
-      "bread": "3 Queijos",
-      "optionals": [
-        "Cheddar",
-        "Tomate",
-        "Pepino",
-        "Cebola roxa",
-        "Salame",
-        "Bacon"
-      ],
-      "status": "Finalizado",
-      "id": 6
-    },
-    {
-      "name": "jual",
-      "meat": "Picanha",
-      "bread": "Italiano Branco",
-      "optionals": [
-        "Tomate"
-      ],
-      "status": "Em produção",
-      "id": 7
-    }
-  ]
+  "burgers": []
 }

@@ -22,6 +22,8 @@ footer{
   border-top: 4px solid #111;
   color: #fcba03;
   width: 100%;
+  position: relative;
+  bottom: -41px;
   p{
     max-width: fit-content;
     margin: 0 50px;

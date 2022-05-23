@@ -1,6 +1,6 @@
 <template>
   <div id="main-banner">
-      <h1>MAKE YOUR BURGER</h1>
+      <h1>MAKE <br> YOUR <br> BURGER</h1>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 <style scoped lang="less">
 #main-banner{
     background-image: url('/img/burger.jpg');
-    background-position: 0 -250px;
+    background-position: center;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -23,8 +23,8 @@ export default {
     h1{
         color: #fff;
         align-items: center;
-        font-size: 50px;
-        padding-left: 60px;
+        font-size: 110px;
+        padding-left: 90px;
     }
 }
 </style>
